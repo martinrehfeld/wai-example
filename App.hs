@@ -11,11 +11,10 @@ withApp :: (Application -> IO ()) -> IO ()
 withApp handler = handler app
 
 app :: Application
-app req = do
-    let r = (requestMethod req, rawPathInfo req)
-    case r of
-         ("GET", "/") -> return index
-         _            -> return notFound
+app Request{requestMethod = m, pathInfo = p} = do
+    case (m, p) of
+         ("GET", []) -> return index
+         _           -> return notFound
 
 index = responseLBS
     status200
