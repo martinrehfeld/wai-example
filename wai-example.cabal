@@ -15,5 +15,5 @@ cabal-version:       >=1.8
 
 executable wai-example
   main-is:           Main.hs
-  build-depends:     base ==4.5.*, wai ==1.3.*, http-types ==0.7.*, bytestring ==0.9.*, warp ==1.3.*, wai-extra ==1.3.*, wai-handler-devel ==1.3.*
+  build-depends:     base ==4.5.*, cmdargs ==0.10.*, wai ==1.3.*, http-types ==0.7.*, bytestring ==0.9.*, warp ==1.3.*, wai-extra ==1.3.*, wai-handler-devel ==1.3.*
   ghc-options:       -O2 -threaded
