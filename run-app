@@ -1,0 +1,6 @@
+#!/bin/sh
+#
+# Run App in development mode, automatically reloading the code
+# before processing requests
+
+runhaskell $0.hs

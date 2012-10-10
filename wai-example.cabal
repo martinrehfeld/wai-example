@@ -1,0 +1,19 @@
+name:                wai-example
+version:             0.1.0.0
+synopsis:            Example mini webservice built on top of WAI
+description:         Demonstrate the use of WAI (Haskell Web Application Interface) to build a mini-webservce.
+                     .
+                     This package showcases a basic project layout for running an app behind the Warp webserver as well as in development mode with wai-handler-devel for automatic source code reloading.
+homepage:            http://github.com/martinrehfeld/wai-example
+license:             MIT
+license-file:        LICENSE
+author:              Martin Rehfeld
+maintainer:          martin.rehfeld@glnetworks.de
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.8
+
+executable wai-example
+  main-is:           Main.hs
+  build-depends:     base ==4.5.*, wai ==1.3.*, http-types ==0.7.*, bytestring ==0.9.*, warp ==1.3.*, wai-extra ==1.3.*, wai-handler-devel ==1.3.*
+  ghc-options:       -O2 -threaded
