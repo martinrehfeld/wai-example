@@ -13,6 +13,7 @@ changed code automatically before requests.
 
 ## Running behind the Warp webserver
 
+    cabal install --only-dependencies     # fetch dependencies
     cabal configure                       # prepare
     cabal build                           # build
     ./dist/build/wai-example/wai-example  # run
